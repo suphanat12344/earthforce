@@ -2,7 +2,7 @@
 <html lang="th">
 <head>
   <meta charset="utf-8" />
-  <title>ระบบตรวจจับการหลับตา (MediaPipe + เสียงเตือน)</title>
+  <title>ระบบตรวจจับการหลับตาคร้าบผมม</title>
   <style>
     body {
       background: #101010;
@@ -99,7 +99,7 @@
     }
 
     let closedFrames = 0;
-    const EAR_THRESHOLD = 0.21; // ถ้าต่ำกว่านี้ถือว่าหลับตา
+    const EAR_THRESHOLD = 0.15; // ถ้าต่ำกว่านี้ถือว่าหลับตา
     const FRAME_THRESHOLD = 8; // ต้องหลับตาติดต่อกันกี่เฟรมถึงจะเตือน
     let lastAlarm = 0;
 
@@ -164,4 +164,5 @@
     startCamera().then(() => camera.start());
   </script>
 </body>
+
 </html>
